@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>No Violencia</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f7fa;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#6a11cb,#2575fc);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    header h1{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:20px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    nav{
+      background:#ffffff;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+      z-index:1000;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#2575fc;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#6a11cb;
+    }
+
+    section{
+      padding:50px 10%;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:30px;
+      color:#2575fc;
+      font-size:35px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      margin-bottom:40px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .contenido{
+      padding:25px;
+    }
+
+    .contenido h3{
+      color:#6a11cb;
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .contenido p{
+      margin-bottom:15px;
+    }
+
+    ul{
+      margin-left:20px;
+    }
+
+    .info{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .box{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+
+    .box h4{
+      color:#2575fc;
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    footer{
+      background:#1f1f1f;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:35px;
+      }
+
+      nav a{
+        display:block;
+        margin:10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NO VIOLENCIA</h1>
+    <p>
+      La violencia afecta a miles de personas todos los días.
+      Con información, respeto y apoyo podemos construir un mundo mejor.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#tipos">Tipos de violencia</a>
+    <a href="#causas">¿Cómo empieza?</a>
+    <a href="#victimas">Víctimas</a>
+    <a href="#soluciones">Cómo detenerla</a>
+  </nav>
+
+  <section id="tipos">
+    <h2 class="titulo">Tipos de Violencia Más Comunes</h2>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Violencia física">
+
+      <div class="contenido">
+        <h3>Violencia Física</h3>
+
+        <p>
+          Es cuando una persona lastima físicamente a otra mediante golpes,
+          empujones, patadas o cualquier agresión corporal.
+        </p>
+
+        <p><strong>¿Cómo empieza?</strong></p>
+        <p>
+          Puede comenzar con discusiones, enojo, control excesivo
+          o amenazas.
+        </p>
+
+        <p><strong>¿Cómo se siente la víctima?</strong></p>
+        <p>
+          Miedo, inseguridad, tristeza y dolor físico.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="Violencia psicológica">
+
+      <div class="contenido">
+        <h3>Violencia Psicológica</h3>
+
+        <p>
+          Ocurre cuando alguien humilla, manipula, amenaza
+          o hace sentir mal a otra persona.
+        </p>
+
+        <p><strong>¿Cómo empieza?</strong></p>
+        <p>
+          Con insultos, burlas, control y comentarios dañinos.
+        </p>
+
+        <p><strong>¿Cómo se siente la víctima?</strong></p>
+        <p>
+          Baja autoestima, ansiedad, tristeza y miedo.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1200&auto=format&fit=crop" alt="Bullying">
+
+      <div class="contenido">
+        <h3>Bullying o Acoso Escolar</h3>
+
+        <p>
+          Es la agresión repetida entre estudiantes mediante insultos,
+          golpes o exclusión.
+        </p>
+
+        <p><strong>¿Cómo empieza?</strong></p>
+        <p>
+          Con apodos ofensivos, burlas o discriminación.
+        </p>
+
+        <p><strong>¿Cómo se siente la víctima?</strong></p>
+        <p>
+          Soledad, tristeza, miedo de asistir a la escuela y estrés.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Violencia digital">
+
+      <div class="contenido">
+        <h3>Violencia Digital</h3>
+
+        <p>
+          Sucede a través de redes sociales, mensajes o internet.
+        </p>
+
+        <p><strong>¿Cómo empieza?</strong></p>
+        <p>
+          Con amenazas, difusión de rumores o publicaciones ofensivas.
+        </p>
+
+        <p><strong>¿Cómo se siente la víctima?</strong></p>
+        <p>
+          Vergüenza, estrés, miedo y ansiedad.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="causas">
+    <h2 class="titulo">¿Cómo se Va Formando la Violencia?</h2>
+
+    <div class="info">
+
+      <div class="box">
+        <h4>Falta de Respeto</h4>
+        <p>
+          Cuando las personas no respetan opiniones,
+          emociones o límites.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Problemas Familiares</h4>
+        <p>
+          Las discusiones constantes pueden afectar
+          el comportamiento.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Discriminación</h4>
+        <p>
+          Rechazar a otros por su apariencia,
+          género o forma de pensar.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Uso Incorrecto de Redes</h4>
+        <p>
+          El odio y las amenazas en internet también
+          son violencia.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="victimas">
+    <h2 class="titulo">¿Qué Puede Sentir una Víctima?</h2>
+
+    <div class="info">
+
+      <div class="box">
+        <h4>Miedo</h4>
+        <p>
+          La persona puede sentirse insegura y nerviosa.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Tristeza</h4>
+        <p>
+          La violencia afecta emocionalmente y puede causar depresión.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Soledad</h4>
+        <p>
+          Muchas víctimas sienten que nadie las entiende.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Baja Autoestima</h4>
+        <p>
+          Los insultos y agresiones dañan la confianza.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="soluciones">
+    <h2 class="titulo">¿Cómo Podemos Frenar la Violencia?</h2>
+
+    <div class="info">
+
+      <div class="box">
+        <h4>Hablar y Escuchar</h4>
+        <p>
+          Resolver problemas con diálogo y respeto.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Denunciar</h4>
+        <p>
+          Buscar ayuda con maestros, familiares o autoridades.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Apoyar a las Víctimas</h4>
+        <p>
+          Escuchar y acompañar a quienes sufren violencia.
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Promover la Empatía</h4>
+        <p>
+          Tratar a los demás con respeto y comprensión.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Página creada para promover el respeto, la paz y la no violencia.
+    </p>
+  </footer>
+
+</body>
+</html>
